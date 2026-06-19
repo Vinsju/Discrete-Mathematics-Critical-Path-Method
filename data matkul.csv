@@ -1,0 +1,18 @@
+id,mata_kuliah,nama_tugas,durasi_jam,prasyarat,deadline_hari,release_time_hari
+START,Umum,Simpul Awal,0,,0,0
+T01,Alpro,Alpro Minggu 1,4,START,4,0
+T02,Alpro,Alpro Minggu 2,4,T01,7,0
+T03,Alpro,Kuis Alpro,2,T02,8,7
+T04,Lokom,Logika Proposisi,2,START,9,8
+T05,Alpro,Skema Pengulangan,3,T02;T03,11,8
+T06,Lidia,Kuis 2,1,START,22,10
+T07,Matdis,Kuis 3 bab,2,START,13,11
+T08,Orkom,Latihan Assembly,3,START,17,12
+T09,Orkom,Praktikum,5,T02;T08,20,13
+T10,Matdis,"Kuis Induksi, Boolean, Barisan",2,T07,24,21
+T11,Matdis,Makalah Bab 1,5,T10,30,25
+T12,Matdis,Makalah Bab 2,5,T11,35,30
+T13,Alpro,Tugas Besar 1,30,T05;T12,39,35
+T14,Alpro,Tugas Besar 2,40,T13,48,45
+T15,Lokom,Praktikum,20,T04;T13;T14,51,50
+FINISH,Umum,Simpul Akhir,0,T06;T09;T12;T14;T15,53,0
